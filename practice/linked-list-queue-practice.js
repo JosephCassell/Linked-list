@@ -32,7 +32,13 @@ class SinglyLinkedList {
     listLength() {
         // Returns the length of the list
         // Implement in O(n) and in O(1) time complexity
-
+        let count = 0
+        let current = this.head
+        while(current){
+            count++
+            current = current.next
+        }
+        return count
         // Your code here
     }
 
@@ -40,7 +46,13 @@ class SinglyLinkedList {
         // Returns the sum of the values of all the nodes
 
         // Your code here
-
+        let count = 0
+        let current = this.head
+        while(current){
+            count += current.value
+            current = current.next
+        }
+        return count
         // Write your hypothesis on the time complexity of this method here
     }
 
@@ -48,7 +60,6 @@ class SinglyLinkedList {
         // Returns the average value of all the nodes
 
         // Your code here
-
         // Write your hypothesis on the time complexity of this method here
     }
 
@@ -128,7 +139,7 @@ class DoublyLinkedList {
             // How do the implementation for singly and doubly vary if at all?
 
         // Your code here
-        
+
         // Write your hypothesis on the time complexity of this method here
     }
 
